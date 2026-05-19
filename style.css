@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header{
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-size: 20px;
+}
+
+/* Sections */
+section{
+    padding: 50px 20px;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+/* Section Titles */
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2575fc;
+    font-size: 32px;
+}
+
+/* About Section */
+.about-content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-content img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #2575fc;
+}
+
+.about-content p{
+    max-width: 600px;
+    font-size: 18px;
+}
+
+/* Cards */
+.card{
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+/* Skills */
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills-list span{
+    background: #2575fc;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* Activities */
+ul{
+    list-style: none;
+    max-width: 700px;
+    margin: auto;
+}
+
+ul li{
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid #2575fc;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer{
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+
+    header h1{
+        font-size: 35px;
+    }
+
+    .about-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content img{
+        width: 180px;
+        height: 180px;
+    }
+}
